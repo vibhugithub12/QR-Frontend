@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { QRCodeCanvas } from "qrcode.react";
-import { createQR } from "../../../qr-validator-backend/src/api";
+import { createQR } from "../api";
 
 function GenerateQR() {
   const [message, setMessage] = useState("");
