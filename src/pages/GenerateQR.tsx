@@ -39,7 +39,10 @@ function GenerateQR() {
       {error && <p>{error}</p>}
 
       {qrId && (
-        <QRCodeCanvas value={`http://localhost:5173/scan/${qrId}`} size={256} />
+        <QRCodeCanvas
+          value={`${window.location.origin}/scan/${qrId}`}
+          size={256}
+        />
       )}
     </div>
   );
